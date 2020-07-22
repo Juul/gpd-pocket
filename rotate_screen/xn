@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Set normal screen rotation
+xrandr --output DSI1 --rotate right
+
+# Set normal touch screen input rotation
+xinput set-prop 'pointer:Goodix Capacitive TouchScreen' 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
